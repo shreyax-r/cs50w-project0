@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Advanced Search</title>
+        <style>
+
+            .other-link{
+                display: flex;
+                justify-content: flex-end;
+            }
+            .other-link a{
+                color: black;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+            .other-link a:hover{
+                text-decoration: underline;
+            }
+
+            .web-body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 40px;
+            }
+
+            .title {
+                color: red;
+                font-size: 27px;
+                margin-bottom: 60px;
+            }
+            .subtitle {
+                color: black;
+                font-size: 21px;
+                font-weight: bold;
+                margin-bottom: 45px;
+            }
+
+            .fields{
+                display: flex; 
+                align-items: center;
+            }
+            .fields label{
+                width: 400px;
+                color:black; 
+                font-size: 18px;
+            }
+
+            .search-bar{
+                border: 2px solid rgb(172, 172, 172);
+                padding: 15px;
+                width: 900px;
+                font-size: 18px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .search-bar:focus{
+                border: 2px solid rgb(43, 117, 237);
+                outline: none;
+            }
+            
+            .search-button{
+                border: 1px solid rgb(36, 99, 200);
+                border-radius: 5px;
+                font-size: 18px;
+                height: 60px;
+                width: 230px;
+                cursor: pointer;
+                background-color: rgb(43, 117, 237);
+                color: white;
+                font-weight: bold;
+                margin-top: 30px;
+            }
+            .search-button:hover{
+                border: 2px solid rgb(27, 79, 162);
+            }
+            
+        </style>
+    </head>
+
+    <body>
+
+        <div class="other-link">
+            <a href="index.html">Google Search</a>
+        </div>
+
+        <div class="web-body">
+            <form action="https://www.google.com/search">
+
+                <div class="title">Advanced Search</div>
+                <div class="subtitle">Find pages with...</div>
+                
+                <div class="fields">
+                    <label for="as_q">all these words:</label>
+                    <input class="search-bar" type="text" name="as_q" id="as_q">
+                </div>
+
+                <div class="fields">
+                    <label for="as_epq">this exact word or phrase:</label>
+                    <input class="search-bar" type="text" name="as_epq" id="as_epq">
+                </div>
+
+                <div class="fields">
+                    <label for="as_oq">any of these words:</label>
+                    <input class="search-bar" type="text" name="as_oq" id="as_oq">
+                </div>
+
+                <div class="fields">
+                    <label for="as_eq">none of these words:</label>
+                    <input class="search-bar" type="text" name="as_eq" id="as_eq">
+                </div>
+                
+                <div style="text-align: center;">
+                    <input class="search-button" type="submit" value="Advanced Search">
+                </div>
+                
+            </form>
+        </div>
+    </body>
+
+</html>
