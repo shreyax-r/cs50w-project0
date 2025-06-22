@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Images</title>
+        <style>
+
+            .other-link{
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+            }
+            .other-link a{
+                color: black;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+            .other-link a:hover{
+                text-decoration: underline;
+            }
+
+            .web-body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .web-body form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;  
+            }
+            .google-logo {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 100px;
+                text-align: center;
+                letter-spacing: -16px;
+                user-select: none;
+            }
+            .image-logo {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(43, 117, 237);
+                font-size: 15px;
+                font-weight: normal;
+                margin-top: -80px;
+                margin-bottom: 60px;
+                margin-left: 245px; 
+                text-align: right;
+                user-select: none;
+            }
+            .search-bar{
+                border: 1px solid rgb(63, 63, 63);
+                border-radius: 30px;
+                padding: 15px 25px;
+                width: 700px;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            .search-bar:hover{
+                border: 1px solid rgb(180, 180, 180);
+            }
+            .search-button{
+                border: 0px;
+                border-radius: 7px;
+                padding: 7px;
+                font-size: 14px;
+                height: 40px;
+                width: 130px;
+            }
+            .search-button:hover{
+                border: 1px solid rgb(196, 196, 196);
+                cursor: pointer;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="other-link">
+            <a href="index.html">Google Search</a>
+        </div>
+        <div class="web-body">
+            <form action="https://www.google.com/search">
+                <input type="hidden" name="tbm" value="isch">
+                <h1 class="google-logo">
+                    <span style="color: rgb(43, 117, 237);">G</span>
+                    <span style="color: rgb(219, 68, 55);">o</span>
+                    <span style="color: rgb(244, 180, 0);">o</span>
+                    <span style="color: rgb(43, 117, 237);">g</span>
+                    <span style="color: rgb(15, 157, 88);">l</span>
+                    <span style="color: rgb(219, 68, 55);">e</span>
+                </h1>
+                <div class="image-logo">images</div>
+                <input class="search-bar" type="text" name="q">
+                <input class="search-button" type="submit" value="Google Search">
+            </form>
+        </div>
+    </body>
+
+</html>
