@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <style>
+
+            .other-links{
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+            }
+            .other-links a{
+                color: black;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+            .other-links a:hover{
+                text-decoration: underline;
+            }
+
+            .web-body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .web-body form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;  
+            }
+            .google-logo {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 100px;
+                margin-bottom: 40px;
+                text-align: center;
+                letter-spacing: -13px;
+                user-select: none;
+            }
+            .search-bar{
+                border: 1px solid rgb(63, 63, 63);
+                border-radius: 30px;
+                padding: 15px 25px;
+                width: 700px;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            .button-row{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+            .search-button{
+                border: 0px;
+                border-radius: 7px;
+                padding: 7px;
+                font-size: 14px;
+                height: 40px;
+            }
+            .search-button:hover{
+                border: 1px solid rgb(196, 196, 196);
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="other-links">
+            <a href="https://images.google.com/?gl=us">Images</a>
+            <a href="https://www.google.com/advanced_search">Advanced Search</a>
+        </div>
+        <div class="web-body">
+            <form action="https://www.google.com/search">
+                <h1 class="google-logo">
+                    <span style="color: rgb(43, 117, 237);">G</span>
+                    <span style="color: rgb(219, 68, 55);">o</span>
+                    <span style="color: rgb(244, 180, 0);">o</span>
+                    <span style="color: rgb(43, 117, 237);">g</span>
+                    <span style="color: rgb(15, 157, 88);">l</span>
+                    <span style="color: rgb(219, 68, 55);">e</span>
+                </h1>
+                <input class="search-bar" type="text" name="q" placeholder="Search Google or type a URL">
+                <div class="button-row">
+                    <input style="width: 130px;" class="search-button" type="submit" value="Google Search">
+                    <input style="width: 150px;" class="search-button" type="submit" name="btnI" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
